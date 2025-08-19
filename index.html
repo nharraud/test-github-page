@@ -7,7 +7,7 @@
     <div id="app"/>
     <script>
         const existingCookie = document.cookie;
-        document.cookie = "newcookie=Hello; Secure; Partitioned";
+        document.cookie = "newcookie=MyRootCookie; Secure; Partitioned";
         const newCookie = document.cookie;
         const cookieEnabled = navigator.cookieEnabled
         document.getElementById("app").innerHTML = `
