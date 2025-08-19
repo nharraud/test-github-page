@@ -6,10 +6,14 @@
     test
     <div id="app"/>
     <script>
+        const existingCookie = document.cookie;
+        document.cookie = "newcookie=Hello; Partitioned";
+        const newCookie = document.cookie;
         const cookieEnabled = navigator.cookieEnabled
         document.getElementById("app").innerHTML = `
-            <div> cookieEnabled: ${cookieEnabled}
-            </div>
+            <div>cookieEnabled: ${cookieEnabled}</div>
+            <div>existingCookie: ${existingCookie}</div>
+            <div>newCookie: ${newCookie}</div>
         `;
     </script>
     <iframe src="https://qa.novogenic-events.com/nh3.html"/>
