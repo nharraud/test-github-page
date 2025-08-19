@@ -1,15 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
+  </head>
+  <body>
+    test
+    <app/>
     <script>
         const cookieEnabled = navigator.cookieEnabled
-        document.getElementById("body").innerHTML = `
+        document.getElementById("app").innerHTML = `
             <div> cookieEnabled: ${cookieEnabled}
             </div>
         `;
     </script>
-  </head>
-  <body>
-    test
   </body>
 </html>
